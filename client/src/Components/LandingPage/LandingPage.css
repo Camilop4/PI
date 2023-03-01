@@ -1,0 +1,33 @@
+.lp {
+    background-image: url("../../Image/loading_pokeball.gif");
+}
+
+h2 {
+   font-size: 30px;
+}
+
+
+.button {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 30%;
+    padding: 25px 45px;
+    background-color: black;
+    color:ivory;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s;
+    border: none;
+    border-radius: 2px; 
+}
+
+
+.button:hover{
+    cursor:pointer ;
+    background: blue;
+    box-shadow: 0 0 10px blue, 0 0 40px
+    blue, 0 0 80px blue;
+}

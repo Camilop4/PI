@@ -1,0 +1,10 @@
+div select {
+    margin-left: 50px;
+    border-radius: 4px;
+    padding: 7px;
+    margin-top: 10px;
+    border: none !important;
+    background-color: white;
+    color: black;
+    outline: none;
+}

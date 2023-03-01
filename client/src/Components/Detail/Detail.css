@@ -1,0 +1,51 @@
+.imagen {
+    border-radius: 200px;
+    border-radius: 200px;
+    background: -webkit-linear-gradient(left,blue, );         
+    box-shadow: 5px 5px 10px blue;
+}
+
+* {
+    text-decoration: none;
+    color: black;
+}
+
+
+.names {
+font-family: 'Cinzel Decorative', cursive;
+font-size: 40px;
+margin-top: 20px;
+text-align: center;
+text-shadow: 1px 1px 2px black
+}
+
+
+
+.id{
+   font-size: 30px;
+   color: rgb(46, 13, 87);
+   text-shadow: 1px 1px 2px black
+}
+
+.volver{
+    color: whitesmoke;
+    background-color: blue;
+    display: inline-block;
+	padding:15px;
+    margin-top:0px;
+}
+.letter{
+    color: whitesmoke
+    }
+
+.type1, .type2 {
+    font-family: "Merienda", cursive;
+    font-size: 30px;
+    margin-right: 30px;
+    text-shadow: 1px 1px 2px grey
+}
+
+.lista{
+    font-size: 22px;
+    margin-top: 50px;
+}
