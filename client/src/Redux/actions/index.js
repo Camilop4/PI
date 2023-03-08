@@ -22,7 +22,6 @@ export function searchPoke(name) {
   };
 }
 
-
 export function filterPokemonsByType(payload) {
   return {
     type: "FILTER_BY_TYPE",
@@ -75,6 +74,7 @@ export function getDetail(id) {
 }
   }
 }
+
 
 export function getType() {
   return async function (dispatch) {

@@ -13,12 +13,13 @@ function validate(pokemon){
   } return errors
 }
 
+
 export default function PokemonCreate() {
   const dispatch = useDispatch();
   const history = useHistory();
   const types = useSelector((state) => state.types);
 
-  const [errors,setErrors] = useState({});
+  const [errors, setErrors] = useState({});
 
   const [pokemon, setPokemon] = useState({
     name: "",
@@ -30,6 +31,7 @@ export default function PokemonCreate() {
     speed: 0,
     height: 0,
     weight: 0,
+    
   });
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function PokemonCreate() {
   function handleSelect(e) {
     setPokemon({
       ...pokemon,
-      type: [...pokemon.types, e.target.value],
+      types: [...pokemon.types, e.target.value],
     });
   }
 
@@ -76,6 +78,8 @@ function onSubmit(e) {
   });
   history.push("/home");
 }
+
+
 
   return (
     <form className="form" onSubmit={onSubmit}>
@@ -174,7 +178,7 @@ function onSubmit(e) {
           ))}{" "}
         </select>
         <ul>
-          <li>{pokemon.types.map((e) => e + " , ")}</li>
+          <li>{pokemon.types.map((e) => e)}</li>
         </ul>
         </p>
         <Link to="/home">

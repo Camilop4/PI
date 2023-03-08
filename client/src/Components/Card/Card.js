@@ -2,8 +2,10 @@ import React from "react";
 import "./Card.css";
 
 export default function CardPokemon({ name, types, image }) {
+  
   return (
     <div className="stylesCard">
+      {console.log(types)}
       <h3 className="name"> {name.charAt(0).toUpperCase() + name.slice(1)}</h3>
       <img src={image} alt="imagen" className="img" width="120px" height="120px"/>
       <ul className="typeStyle">
@@ -16,6 +18,8 @@ export default function CardPokemon({ name, types, image }) {
                }
         </li>
       </ul>
+      
     </div>
+    
   );
 }

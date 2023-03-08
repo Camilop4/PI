@@ -4,7 +4,7 @@ const { Type } = require("../db.js");
 
 const router = Router();
 
-router.get("/", async (_req, res, next) => {
+router.get("/", async (req, res, next) => {
   try {
     const api = await axios.get("https://pokeapi.co/api/v2/type"); //Trae todos los tipos
     const types = await api.data // trae la respuesta en data

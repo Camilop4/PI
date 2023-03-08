@@ -64,8 +64,8 @@ router.post("/", async (req, res, next) => { //Ruta de creacion del pokemon
 
      return res.send("Pokemon creado exitosamente");
     }
-  } catch (err) {
-    res.status(400).send("Error en data");
+  } catch (error) {
+    res.status(400).send({error: error.message});
   }
 })
 

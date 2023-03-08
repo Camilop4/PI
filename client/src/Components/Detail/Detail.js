@@ -12,7 +12,7 @@ export default function Detail(props) {
   }, [dispatch]);
 
   let details = useSelector((state) => state.detail);
-console.log(details)
+
   return (
     <div className="container">
       <div className="volver">

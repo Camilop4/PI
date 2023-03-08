@@ -26,7 +26,7 @@ function Home() {
     indexOfFirstPokemon,
     indexOfLastPokemon
   );
-
+   console.log(currentPokemons);
   const paginado = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -95,6 +95,7 @@ function Home() {
             paginado={paginado}
           />
           {currentPokemons?.map((e) => {
+            console.log(e);
               return (
                 <fragment>
                   <Link to={"/home/" + e.id}>

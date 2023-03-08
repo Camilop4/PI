@@ -26,7 +26,7 @@ const initialState = {
       case "FILTER_CREATED":
         const createdFilter =
           action.payload === "Creados"
-            ? state.allPokemons.filter((e) => e.id.length > 2)
+            ? state.allPokemons.filter((e) => e.id.length > 0)
             : state.allPokemons.filter((e) => e.id <= 40);
         return {
           ...state,
@@ -86,6 +86,7 @@ const initialState = {
           ...state,
           types: action.payload,
         };
+
       default:
         return state;
     }
